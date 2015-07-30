@@ -1,6 +1,14 @@
+
 .site-content {
-    background: #fff;
+    padding-bottom: 4em;
+    /*background: #b2b2b2;*/
 }
+.single .site-content,
+.page .site-content { 
+    background: #fff; 
+    /*background: hsl(0, 0%, 100%);*/
+}
+
 .site-content .widget-area {
     width: 380px;
     float: right;

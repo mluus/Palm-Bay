@@ -6,7 +6,7 @@
  *
  * @package palmbay
  */
-
+ob_start();
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -31,7 +31,22 @@
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'palmbay' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+                        
+                        <div class="search-toggle">
+                            <i class="fa fa-search"></i>
+                            <a href="#search-container" class="screen-reader-text"><?php _e( 'Search', 'my-simone' ); ?></a>
+                        </div>
+                        
+                        <?php my_simone_social_menu(); ?>
 		</nav><!-- #site-navigation -->
+                <div id="search-container" class="search-box-wrapper clear">
+                    <div class="search-box clear">
+                        <?php get_search_form(); ?>
+                    </div>
+                </div> 
+                
+               
 	</header><!-- #masthead -->
+         <?php echo get_new_royalslider(2); ?>
 
 	<div id="content" class="site-content">

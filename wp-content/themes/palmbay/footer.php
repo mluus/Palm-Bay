@@ -13,9 +13,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'palmbay' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'palmbay' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'palmbay' ), 'palmbay', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+			
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'palmbay' ), 'palmbay' ); ?>
+                        <?php get_sidebar( 'footer' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

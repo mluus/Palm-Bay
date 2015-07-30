@@ -9,7 +9,17 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+            
+        <?php
+            /* translators: used between list items, there is a space after the comma */
+            $category_list = get_the_category_list( __( ', ', 'my-simone' ) );
+
+            if ( palmbay_categorized_blog() ) {
+                echo '<div class="category-list">' . $category_list . '</div>';
+            }
+        ?>    
+            
+		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 
 		<div class="entry-meta">
 			<?php palmbay_posted_on(); ?>
