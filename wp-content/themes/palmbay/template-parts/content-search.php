@@ -10,6 +10,8 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+      <div id="index-box">
+          <div id ="search_result">
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 
@@ -24,8 +26,11 @@
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 
-	<footer class="entry-footer">
-		<?php palmbay_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+        <footer class="entry-footer continue-reading">
+            <?php echo '<a href="' . get_permalink() . '" title="' . __('Continue Reading ', 'palmbay') . get_the_title() . '" rel="bookmark">Continue Reading<i class="fa fa-arrow-circle-o-right"></i></a>'; ?>
+        </footer><!-- .entry-footer -->
+          </div>
+        </div>
 </article><!-- #post-## -->
+
 

@@ -1,0 +1,23 @@
+Method 1
+
+1) Login to your website and go to the Plugins section of your admin panel.
+
+2) Click the Add New button.
+
+3) Under Install Plugins, click the Upload link.
+
+4) Select the plugin zip file (final-tiles-grid-gallery.x.x.x.zip) from your computer then click the
+You should see a message stating that the plugin was installed successfully.
+5) Click the Activate Plugin link.
+
+Method 2
+
+1) You should have access to the server where WordPress is installed. If you don't, see your system administrator.
+
+2) Copy the plugin zip file (final-tiles-grid-gallery.x.x.x.zip) up to your server and unzip it somewhere on the file system.
+
+3) Copy the "final-tiles-grid-gallery" folder into the /wp-content/plugins directory of your WordPress installation.
+
+4) Login to your website and go to the Plugins section of your admin panel.
+
+5) Look for "Final Tiles Grid Gallery" and click Activate.

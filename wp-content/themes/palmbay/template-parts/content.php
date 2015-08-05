@@ -8,8 +8,9 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <div id="index-box">
 	<header class="entry-header">
-		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?> 
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
@@ -20,22 +21,15 @@
 
 	<div class="entry-content">
 		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'palmbay' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-		?>
+                     the_excerpt(); ?>
+		
 
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'palmbay' ),
-				'after'  => '</div>',
-			) );
-		?>
+		
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php palmbay_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+        <footer class="entry-footer continue-reading">
+            <?php echo '<a href="' . get_permalink() . '" title="' . __('Continue Reading ', 'palmbay') . get_the_title() . '" rel="bookmark">Continue Reading<i class="fa fa-arrow-circle-o-right"></i></a>'; ?>
+        </footer><!-- .entry-footer -->
+                
+    </div><!--.index-box -->     
 </article><!-- #post-## -->

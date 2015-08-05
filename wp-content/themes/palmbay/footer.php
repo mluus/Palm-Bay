@@ -17,6 +17,9 @@
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'palmbay' ), 'palmbay' ); ?>
                         <?php get_sidebar( 'footer' ); ?>
 		</div><!-- .site-info -->
+                <div class="council">
+
+                </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

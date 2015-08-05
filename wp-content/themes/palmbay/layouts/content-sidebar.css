@@ -30,8 +30,8 @@
 .comments-area,
 .paging-navigation {
     position: relative;
-    max-width: 780px;
-    max-width: 78rem;
+    max-width: 640px;
+    max-width: 64rem;
     padding: 0 4rem;
     margin: 0 auto;
 }
@@ -61,6 +61,10 @@
     .comments-area,
     .paging-navigation { 
         margin-right: 0; 
+    }
+    
+    #index-box{
+        margin-right: 0;
     }
     
 }

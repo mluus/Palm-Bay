@@ -716,6 +716,9 @@ a:active {
     color: white;
     color: hsl(0, 0%, 100%);
     } 
+    .main-navigation{
+        height: 44px;
+    }   
     
 }
 
@@ -729,7 +732,12 @@ a:active {
     line-height: 1.3em;
     color: white;
     color: hsl(0, 0%, 100%);
+     height: 44px;
     } 
+    
+ .main-navigation{
+        height: 44px;
+    }    
     
 }
 
@@ -1336,6 +1344,81 @@ input[type="search"] {
 .search-box .search-submit { 
     display: none; 
 }
+
+#index-box {
+    max-width: 780px;
+    max-width: 78rem;
+    padding: 1em 0 2em;
+    margin: 0 auto 2em;
+    background: #e5e5e5;
+
+}
+
+#index-box blockquote.alignleft,
+#index-box blockquote.alignright {
+    background: #e5e5e5;
+    border: none;
+}
+
+@media screen and (min-width: 1820px) {
+    #index-box blockquote.alignright { padding-right: 2em; }
+}
+
+@media screen and (min-width: 1320px) {
+    #index-box blockquote.alignleft { padding-left: 2em; }
+}
+
+/*--------------------------------------------------------------
+# Slider
+--------------------------------------------------------------*/
+
+
+@media screen and (min-width: 100px) and (max-width: 599px){
+    #new-royalslider-2{
+        display: none;
+    }
+    .content-area{
+        margin-top: 200px;
+    }
+    
+}
+
+/*--------------------------------------------------------------
+# Index Box
+--------------------------------------------------------------*/
+
+#index-box {
+    max-width: 780px;
+    max-width: 78rem;
+    padding: 1em 0 2em;
+    margin: 0 auto 2em;
+    background: #e5e5e5;
+    
+}
+
+#index-box blockquote.alignleft,
+#index-box blockquote.alignright {
+    background-color: #e5e5e5
+   
+    border: none;
+}
+
+@media screen and (min-width: 1820px) {
+    #index-box blockquote.alignright { padding-right: 2em; }
+}
+
+@media screen and (min-width: 1320px) {
+    #index-box blockquote.alignleft { padding-left: 2em; }
+}
+
+#search_result{
+    /*margin-left: 4%;*/
+    position: relative;
+    max-width: 640px;
+    max-width: 64rem;
+    padding: 0 4rem;
+    margin: 0 auto;
+}
     
 
 
@@ -1396,6 +1479,18 @@ input[type="search"] {
 	margin-right: auto;
 }
 
+/* Alignment responsive */
+@media screen and (min-width: 1320px) {
+    .alignleft {
+        margin-left: -160px; 
+    }
+}
+
+@media screen and (min-width: 1820px) {
+    .alignright { 
+        margin-right: -160px; 
+    }
+}
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
@@ -1428,7 +1523,7 @@ input[type="search"] {
 # Widgets
 --------------------------------------------------------------*/
 .sidebar_style{
-    width: 130%;
+    width: 126%;
     height: auto;
     background-color: #666; 
     margin-top: -109px;
@@ -1606,51 +1701,51 @@ input[type="search"] {
 /* Smaller fonts for smaller screens */
 @media screen and (max-width: 680px) {
     .entry-title {
-        font-size: 32px;
-        font-size: 3.2rem;
+        font-size: 20px;
+        font-size: 2.0rem;
         line-height: 1.3em;
     }
     .entry-content h1 {
-        font-size: 28px;
-        font-size: 2.8rem;
+        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     .entry-content h2 {
-        font-size: 26px;
-        font-size: 2.6rem;
+        font-size: 17px;
+        font-size: 1.7rem;
     }
 
     .entry-content h3 {
-        font-size: 24px;
-        font-size: 2.4rem;
+        font-size: 16px;
+        font-size: 1.6rem;
     }
 
     .entry-content h4 {
-        font-size: 22px;
-        font-size: 2.2rem;
+        font-size: 15px;
+        font-size: 1.5rem;
     }
 
     .entry-content h5 {
-        font-size: 20px;
-        font-size: 2rem;
+        font-size: 14px;
+        font-size: 1.4rem;
     }
 
     .entry-content h6 {
-        font-size: 18px;
-        font-size: 1.8rem;
+        font-size: 13px;
+        font-size: 1.3rem;
     }
 
     .entry-content p,
     .entry-content ul,
     .entry-content ol  {
-        font-size: 18px;
-        font-size: 1.8rem;
+        font-size: 10px;
+        font-size: 1.0rem;
     }
     
     .entry-content blockquote p {
-        font-size: 22px;
-        font-size: 2.2rem;
-        line-height: 1.5em;
+        font-size: 14px;
+        font-size: 1.4rem;
+        line-height: 1.0em;
     }
 }
 
@@ -1728,8 +1823,103 @@ input[type="search"] {
         content: '.';
     }
 }
-                
 
+
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 0 auto;
+}
+.wp-caption-text {
+	text-align: center;
+}
+.wp-caption .wp-caption-text ,
+.gallery-caption {
+    padding: 0.8075em 1em;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
+    background: #e5e5e5;
+    background: hsl(0, 0%, 90%);
+}
+
+.site-main .gallery {
+	margin-bottom: 1.5em;
+}
+
+.site-main .gallery-item {
+    position: relative;    
+    max-width:100%;
+    float: left;
+    margin-right: 3.333333333%;
+    margin-bottom: 3rem;
+    background: #333;
+    overflow: hidden;
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-height: 50%;
+    width: 100%;
+    padding: 6px 8px;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #fff;
+    text-align: left;
+    background-color: hsla(0, 0%, 0%, .8);
+    opacity: 0;
+}
+
+.gallery-item:hover .gallery-caption { 
+    opacity: 1; 
+}
+.site-main .gallery a img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+
+
+/*--------------------------------------------------------------
+Index and Archive
+--------------------------------------------------------------*/
+
+.continue-reading {
+    margin: 0 4rem;
+    font-weight: 900;
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+.continue-reading i { margin-left: .5em; }
+  
+
+/*--------------------------------------------------------------
+##Staff pages
+--------------------------------------------------------------*/
+                
+.staff{
+    margin-left: 10%;
+    font-size: 20px;
+       
+}
+
+/*--------------------------------------------------------------
+##Calendar
+--------------------------------------------------------------*/
+
+.gce-month-title{
+    font-size: 60px;
+    color: #FF9D00;
+}
 
 
 /*.sticky {
@@ -1860,11 +2050,11 @@ object {
 }
 
 .gallery-columns-3 .gallery-item {
-	max-width: 33.33%;
+	max-width: 20%;
 }
 
 .gallery-columns-4 .gallery-item {
-	max-width: 25%;
+	max-width: 14%;
 }
 
 .gallery-columns-5 .gallery-item {
@@ -1928,4 +2118,45 @@ object {
 /*.site-info { 
     float: left;
 }*/
+
+.council {
+    background-image: url('http://palmbay:8888/wp-content/uploads/2015/08/council.png'); 
+    height:190px;
+    width: 610px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -200px ;
+    margin-left: 29%;
+    
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px){
+    .council{
+    background-image: url('http://palmbay:8888/wp-content/uploads/2015/08/council.png'); 
+    height:200px;
+    width: 410px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -200px ;
+    margin-left: 22%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 899px){
+    .council{
+    background-image: url('http://palmbay:8888/wp-content/uploads/2015/08/council.png'); 
+    height:190px;
+    width: 280px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -200px ;
+    margin-left: 25%;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 699px){
+    .council{
+        display: none;
+    }
+}
     
