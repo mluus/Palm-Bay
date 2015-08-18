@@ -9,7 +9,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     
-      <div id="index-box">
+  
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
@@ -23,7 +23,7 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-      </div>    
+   
 
 	<footer class="entry-footer">
 		<?php edit_post_link( esc_html__( 'Edit', 'palmbay' ), '<span class="edit-link">', '</span>' ); ?>
